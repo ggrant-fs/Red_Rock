@@ -29,7 +29,7 @@ Created, designed, and develpoed by [Gary Grant](https://github.com/ggrant-fs?ta
 !['Events Page'](https://i.imgur.com/bhME8sE.png)
 
 #### Component Hierarchy
-!['Component Hierarchy'](https://i.imgur.com/yrnNqy8.png)
+!['Component Hierarchy'](https://i.imgur.com/zKDO4Tk.png)
 
 #### Componenet Breakdown
 
@@ -61,7 +61,7 @@ Created, designed, and develpoed by [Gary Grant](https://github.com/ggrant-fs?ta
 ### Server (Back End)
 
 #### ERD Model
-!['ERD'](https://i.imgur.com/mFib13i.png)
+!['ERD'](https://i.imgur.com/zKDO4Tk.png)
 #### Data Hierarchy
  Red_Rock
  - users/

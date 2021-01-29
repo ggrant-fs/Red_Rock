@@ -37,18 +37,26 @@ Created, designed, and develpoed by [Gary Grant](https://github.com/ggrant-fs?ta
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
-
+|  Sign in Form| functional   |   y   |   Y   | Members of the applications can enter via the sign in form      |
+|  Regester Form| functional |   Y   |   y   | New Members can register via the Register form              |
+|  Image Slider| functional |   Y   |   Y   | Provides a sliding affect to the images in the homepage |
+|  Membership Type| functional| Y | Y| This componenet provides the choices of memberships|
+|  Featured| functional | Y | Y| Provides users with most featured events/benefits |
+|  Event | functional| Y | Y |The list of luxary events available to the user|
+|  Service| function | Y | Y |description of all of the applications services|
+|  Team Images | n | n| a component that displays the team member's photos|
+ 
 
 #### component Estimates
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| backend Authorization  |    H     |     3 hrs      | pending    | pending  |
+| backend CRUD        | H |  4 | pending | pending|
+| frontend authorization | H |  3 hrs| pending | pending |
+| frontend CRUD       | H| 3 hrs|pending|pending|
+| fronend styling| H | 4 hrs | pending | pending | 
+| TOTAL               |          |     14 hrs      |     pending     |     pending     |
 
 ### Server (Back End)
 
@@ -56,9 +64,9 @@ Created, designed, and develpoed by [Gary Grant](https://github.com/ggrant-fs?ta
 !['ERD'](https://i.imgur.com/mFib13i.png)
 #### Data Hierarchy
  Red_Rock
- |__ users/
- |__ companys/
- |__ Benefits/
+ - users/
+ - companys/
+ - benefits/
 
 ### Dependencies
 |     Library      | Description                                |
@@ -69,3 +77,7 @@ Created, designed, and develpoed by [Gary Grant](https://github.com/ggrant-fs?ta
 |   Ruby on Rails  |  server-side web application framework written in Ruby |
 |   Axios          | Promise based HTTP client for the browser and node.js |
 |   fullPage.js.   | FullPage.js plugin by Alvaro Trigo. One page Scroll sections |
+
+## Post MVP
+- Have users make purchases directly on the site
+- include Geoloaction 

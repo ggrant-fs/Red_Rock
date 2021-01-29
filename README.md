@@ -27,9 +27,10 @@ Created, designed, and develpoed by [Gary Grant](https://github.com/ggrant-fs?ta
 !['Contact Page'](https://i.imgur.com/oW04MxL.png)
 !['Pricing Page'](https://i.imgur.com/RpW6nlX.png)
 !['Events Page'](https://i.imgur.com/bhME8sE.png)
+!['Company Form'](https://i.imgur.com/qhlD1MF.png)
 
 #### Component Hierarchy
-!['Component Hierarchy'](https://i.imgur.com/zKDO4Tk.png)
+
 
 #### Componenet Breakdown
 

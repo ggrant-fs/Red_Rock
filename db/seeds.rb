@@ -17,7 +17,7 @@
 end
 
 1000.times do
-    User.Create!(
+    User.create!(
         username: Faker::Company.name
         email: Faker::Name.first_name
         phone_number: Faker::PhoneNumber.phone_number

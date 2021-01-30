@@ -5,7 +5,7 @@ class CreateCompanies < ActiveRecord::Migration[6.1]
       t.string :email
       t.string :password
       t.integer :phone_number
-      # t.reference :Benefit
+
 
       t.timestamps
     end

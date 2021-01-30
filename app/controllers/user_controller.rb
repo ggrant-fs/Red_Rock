@@ -1,4 +1,5 @@
 class UserController < ApplicationController
+  before :set_user, only: [:show, :update, :delete]
   #controllers provides us with all the logic as to 
   #how the routes are managed. In ruby to create the 
   # routes we must first create the controlers with 
@@ -14,21 +15,26 @@ class UserController < ApplicationController
     # @user is an instance variable that holds our User get request
     # line 17 renders data in the variable in json format
     @user = User.all
-    render json: @user
+    render json @user
+  
+   end
   end
 
   def show
     #the show method will return one specific item from the 
     #database with the use of an ID (it is also a get request)
-    @user = User.find(params[:id])
     render json: @user
   end
 
   def create
     #create is a post request that will create data that is submitted
     #from the client side to the backend(create will not take an ID)
-    @user = User.create(params)
-    render json: @user
+    @user = User.new(user_params)
+    if @user.save
+      render json: @user, status: created
+    else
+      render json: @user.errors, status: unprocessable_entity
+    end
   end
 
   def update
@@ -36,9 +42,11 @@ class UserController < ApplicationController
     #the update method will first use the find method to locate the
     #item then use the update method to change the state of the item
     #update does use an ID
-
-    @user = User.find(params[:id])
-    @user.update(params)
+    if @user.update(user_params)
+      render json: @user
+    else
+      render json: @user.error, status: :unprocessable_entity
+    end
   end
 
   def delete
@@ -47,7 +55,11 @@ class UserController < ApplicationController
     #destroy method it must first use the find method to locate
     #the item in the database.Once the item is selected it can
     #select and destroy the item from the database
-    @user = User.find(params[:id])
     @user.destroy 
+  end
+
+  private
+  def set_user
+    @user = User.find(params[:id])
   end
 end

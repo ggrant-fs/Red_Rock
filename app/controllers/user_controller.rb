@@ -62,4 +62,9 @@ class UserController < ApplicationController
   def set_user
     @user = User.find(params[:id])
   end
+
+  def user_params
+    params.requrie(:user).permit( :username, :email, :password)
+    validates :password, length :{ minimum: 8}
+  end
 end

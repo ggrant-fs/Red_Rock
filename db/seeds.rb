@@ -17,14 +17,14 @@
 end
 
 1000.times do
-    User.create!(
+    Company.create!(
         username: Faker::Company.name
         email: Faker::Name.first_name
-        phone_number: Faker::PhoneNumber.phone_number
-        # industry: Faker::Company.industry
-        # type: Faker::Company.type
-        # suffix: Faker::Company.suffix
-        # duns: Faker::Company.duns_number
+        phone_number: Faker::Number.number(digits: 10)
+        industry: Faker::Company.industry
+        type: Faker::Company.type
+        suffix: Faker::Company.suffix
+        duns: Faker::Company.duns_number
 
     )
 end

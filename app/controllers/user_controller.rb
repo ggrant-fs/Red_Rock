@@ -1,5 +1,6 @@
 class UserController < ApplicationController
   before :set_user, only: [:show, :update, :delete]
+  before_action :authorize_request, except: :create
   #controllers provides us with all the logic as to 
   #how the routes are managed. In ruby to create the 
   # routes we must first create the controlers with 

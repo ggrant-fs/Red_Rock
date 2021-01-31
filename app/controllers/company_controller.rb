@@ -1,4 +1,6 @@
 class CompanyController < ApplicationController
+  before :set_user, only: [:show, :update, :delete]
+  before_action :authorize_request, except: :create
   def index
      #the index method is a get request that will retreive all
     #the requested data in our database

@@ -30,8 +30,13 @@ class UserController < ApplicationController
     #create is a post request that will create data that is submitted
     #from the client side to the backend(create will not take an ID)
     @user = User.new(user_params)
-    if @user.save
-      render json: @user, status: created
+      if @user.save
+        @token = encode({id:@user.id})
+        render json: {
+          user: @user.attributes.except("password_digest"),
+          token: @token
+        }, status: :created 
+      end
     else
       render json: @user.errors, status: unprocessable_entity
     end

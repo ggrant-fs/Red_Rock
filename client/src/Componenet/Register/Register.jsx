@@ -23,7 +23,7 @@ const Register = () => {
     }
     return (
         <React.Fragment>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input
                     type='text'
                     name='username'
@@ -66,6 +66,7 @@ const Register = () => {
                     onChange={handleChange}
                     placeholder='Duns number'
                 />
+                <butto type="submit">Submit</butto>
             </form>
         </React.Fragment>
     );

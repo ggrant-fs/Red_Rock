@@ -7,22 +7,10 @@ const LoginPage = () => {
         email: '',
         password: ''
     })
-    const [companyLogin, setCompanyLogin] = useState({
-        companyName: '',
-        companyEmail: '',
-        compnayPassword: ''
-    })
+
     const userHandleChange = (event) => {
         const { name, value } = event.target
         setLoginData((prevState) => ({
-            ...prevState,
-            [name]: value
-        }))
-    }
-
-    const companyHandleChange = (event) => {
-        const { name, value } = event.target
-        setCompanyLogin((prevState) => ({
             ...prevState,
             [name]: value
         }))
@@ -32,9 +20,6 @@ const LoginPage = () => {
         event.preventDefault()
     }
 
-    const companyHandleSubmit = (event) => {
-        event.preventDefault()
-    }
     return (
         <React.Fragment>
             {/* Below are the login forms for users and companies */}
@@ -63,31 +48,7 @@ const LoginPage = () => {
                     placeholder='Password...'
                 />
             </form>
-            {/* Company login form */}
-            <form onSubmit={companyHandleSubmit}>
-                <input
-                    type='text'
-                    name='CompanyName'
-                    value={companyLogin.companyName}
-                    onChange={companyHandleChange}
-                    placeholder='Company name...'
 
-                />
-                <input
-                    type='text'
-                    name='CompanyEmail'
-                    value={companyLogin.companyEmail}
-                    onChange={companyHandleChange}
-                    placeholder='Company email...'
-                />
-                <input
-                    type='text'
-                    name='CompanyPassword'
-                    value={companyLogin.compnayPassword}
-                    onChange={companyHandleChange}
-                    placeholder='Company password...'
-                />
-            </form>
 
         </React.Fragment>
     );

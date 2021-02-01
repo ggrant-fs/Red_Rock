@@ -5,6 +5,7 @@ import LoginPage from './Screens/LoginPage/LoginPage'
 import {Route, Switch} from 'react-router'
 import CompanyForm from './Screens/CompanyForm/CompanyForm'
 import AboutPage from './Screens/AboutPage/AboutPage'
+import ContactPage from './Screens/ContactPage/ContactPage'
 function App() {
   return (
     <>
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path='/about'>
           <AboutPage />
+        </Route>
+        <Route path='/ccntact'>
+          <ContactPage />
         </Route>
       </Switch>
     </>

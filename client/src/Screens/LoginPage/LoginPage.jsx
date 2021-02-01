@@ -37,6 +37,9 @@ const LoginPage = () => {
     }
     return (
         <React.Fragment>
+            {/* Below are the login forms for users and companies */}
+
+            {/* user login form */}
             <form onSubmit={handleSubmit}>
                 <input
                     type='text'
@@ -60,7 +63,7 @@ const LoginPage = () => {
                     placeholder='Password...'
                 />
             </form>
-
+            {/* Company login form */}
             <form onSubmit={companyHandleSubmit}>
                 <input
                     type='text'
@@ -74,14 +77,14 @@ const LoginPage = () => {
                     type='text'
                     name='CompanyEmail'
                     value={companyLogin.companyEmail}
-                    onChange={ }
+                    onChange={companyHandleChange}
                     placeholder='Company email...'
                 />
                 <input
                     type='text'
                     name='CompanyPassword'
                     value={companyLogin.compnayPassword}
-                    onChange={ }
+                    onChange={companyHandleChange}
                     placeholder='Company password...'
                 />
             </form>

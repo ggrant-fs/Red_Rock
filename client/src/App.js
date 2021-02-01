@@ -13,9 +13,9 @@ function App() {
         <Route exact path='/'>
           <FullPage/>   
         </Route>
-        <Route path="/login">
+        {/* <Route path="/login">
           <LoginPage />
-        </Route>
+        </Route> */}
         <Route path='/company'>
           <CompanyForm/>
         </Route>

@@ -4,7 +4,7 @@ import FullPage from './Screens/HomePage/FullPage'
 import LoginPage from './Screens/LoginPage/LoginPage'
 import {Route, Switch} from 'react-router'
 import CompanyForm from './Screens/CompanyForm/CompanyForm'
-
+import AboutPage from './Screens/AboutPage/AboutPage'
 function App() {
   return (
     <>
@@ -17,6 +17,9 @@ function App() {
         </Route>
         <Route path='/company'>
           <CompanyForm/>
+        </Route>
+        <Route path='/about'>
+          <AboutPage />
         </Route>
       </Switch>
     </>

@@ -4,14 +4,10 @@ Rails.application.routes.draw do
   get 'company/create'
   get 'company/update'
   get 'company/delete'
-  get 'user/index'
-  get 'user/show'
-  get 'user/create'
-  get 'user/update'
-  get 'user/delete'
+  
   get '/auth/verify', to: 'authentication#verify'
   post '/auth/login', to: 'authentication#login'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources:user
-  resources:company
+  resources :users
+  resources :company
 end

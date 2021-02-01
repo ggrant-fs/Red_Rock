@@ -1,5 +1,5 @@
-class UserController < ApplicationController
-  before :set_user, only: [:show, :update, :delete]
+class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :update, :delete]
   before_action :authorize_request, except: :create
   #controllers provides us with all the logic as to 
   #how the routes are managed. In ruby to create the 
@@ -18,7 +18,7 @@ class UserController < ApplicationController
     @user = User.all
     render json @user
   
-   end
+   
   end
 
   def show
@@ -37,9 +37,9 @@ class UserController < ApplicationController
           user: @user.attributes.except("password_digest"),
           token: @token
         }, status: :created 
-      end
+   
     else
-      render json: @user.errors, status: unprocessable_entity
+      render json: @user.errors, status: :unprocessable_entity
     end
   end
 
@@ -70,7 +70,7 @@ class UserController < ApplicationController
   end
 
   def user_params
-    params.requrie(:user).permit( :username, :email, :password)
-    validates :password, length :{ minimum: 8}
+    params.require(:user).permit( :username, :email, :password)
+    # validates :password, length :{ minimum: 8}
   end
 end

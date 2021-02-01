@@ -73,6 +73,7 @@ const LoginPage = () => {
                         onChange={userHandleChange}
                         placeholder='Password...'
                     />
+                    <button type='submit'>Submit</button>
                 </form>
             </div>
             <div id='register-form'>
@@ -81,7 +82,7 @@ const LoginPage = () => {
                         type='text'
                         name='firstName'
                         value={register.firstName}
-                        onchange={registerHandleChange}
+                        onChange={registerHandleChange}
                         placeholder="First Name..."
                     />
                     <input
@@ -112,6 +113,7 @@ const LoginPage = () => {
                         onChange={registerHandleChange}
                         placeholder='password...'
                     />
+                    <button type='submit'>Submit</button>
                 </form>
             </div>
 

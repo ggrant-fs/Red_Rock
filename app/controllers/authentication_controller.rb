@@ -6,8 +6,8 @@ class AuthenticationController < ApplicationController
       if @user.authenticate(login_params[:password])
         token = encode({id: @user.id})
         render json: {
-            user: @user.attributes.except("password_digest")
-            token: token
+            user: @user.attributes.except("password_digest"),
+            token: token,
         }, status: :ok
         else 
             render json: { errors: 'unauthorized'}, status: :unauthorized

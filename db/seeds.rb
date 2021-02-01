@@ -7,8 +7,8 @@ require "faker"
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-500.times do
-  user_data =  User.new(
+20.times do
+  user_data =  User.create!(
         username: Faker::Name.name,
         email: Faker::Name.first_name + "@gmail.com",
         phone_number: Faker::PhoneNumber.cell_phone,
@@ -16,10 +16,10 @@ require "faker"
     )
 end
 
-500.times do
-   company_data = Company.new(
+20.times do
+   company_data = Company.create!(
         username: Faker::Company.name,
-        email: Faker::Name.first_name,
+        email: Faker::Name.first_name + "gmail.com",
         phone_number: Faker::Number.number(digits: 10),
         industry: Faker::Company.industry,
         suffix: Faker::Company.suffix,

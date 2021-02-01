@@ -32,8 +32,8 @@ ActiveRecord::Schema.define(version: 2021_01_31_055026) do
   create_table "companies", force: :cascade do |t|
     t.string "username"
     t.string "email"
-    t.string "password"
-    t.integer "phone_number"
+    t.string "password_digest"
+    t.string "phone_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "industry"
@@ -44,8 +44,8 @@ ActiveRecord::Schema.define(version: 2021_01_31_055026) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
-    t.string "password"
-    t.integer "phone_number"
+    t.string "password_digest"
+    t.string "phone_number"
     t.string "membership"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

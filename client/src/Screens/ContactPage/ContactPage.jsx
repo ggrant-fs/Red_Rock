@@ -44,6 +44,7 @@ const ContactPage = () => {
                     onChange={handleChange}
                     placeholder='Email...'
                 />
+
             </form>
         </React.Fragment>
 

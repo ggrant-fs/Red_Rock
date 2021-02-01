@@ -1,10 +1,92 @@
 import React from 'react';
+import { useState } from 'react'
 
 const LoginPage = () => {
-    return (
-        <div>
+    const [loginData, setLoginData] = useState({
+        username: '',
+        email: '',
+        password: ''
+    })
+    const [companyLogin, setCompanyLogin] = useState({
+        companyName: '',
+        companyEmail: '',
+        compnayPassword: ''
+    })
+    const userHandleChange = (event) => {
+        const { name, value } = event.target
+        setLoginData((prevState) => ({
+            ...prevState,
+            [name]: value
+        }))
+    }
 
-        </div>
+    const companyHandleChange = (event) => {
+        const { name, value } = event.target
+        setCompanyLogin((prevState) => ({
+            ...prevState,
+            [name]: value
+        }))
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+    }
+
+    const companyHandleSubmit = (event) => {
+        event.preventDefault()
+    }
+    return (
+        <React.Fragment>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type='text'
+                    name='username'
+                    value={loginData.username}
+                    onChange={userHandleChange}
+                    placeholder='Username...'
+                />
+                <input
+                    type='text'
+                    name='email'
+                    value={loginData.email}
+                    onChange={userHandleChange}
+                    placeholder='email...'
+                />
+                <input
+                    type='password'
+                    name='password'
+                    value={loginData.password}
+                    onChange={userHandleChange}
+                    placeholder='Password...'
+                />
+            </form>
+
+            <form onSubmit={companyHandleSubmit}>
+                <input
+                    type='text'
+                    name='CompanyName'
+                    value={companyLogin.companyName}
+                    onChange={companyHandleChange}
+                    placeholder='Company name...'
+
+                />
+                <input
+                    type='text'
+                    name='CompanyEmail'
+                    value={companyLogin.companyEmail}
+                    onChange={ }
+                    placeholder='Company email...'
+                />
+                <input
+                    type='text'
+                    name='CompanyPassword'
+                    value={companyLogin.compnayPassword}
+                    onChange={ }
+                    placeholder='Company password...'
+                />
+            </form>
+
+        </React.Fragment>
     );
 };
 

@@ -1,15 +1,24 @@
+.section{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#background-one{
+  background-image: url('https://i.imgur.com/XJRIJQt.png');
+}
 #background-two{
-  background-color: red;
+  background-image: url('https://i.imgur.com/fojjSwu.png?1');
 }
 
 #background-three{
-    background-color: green;
+   background-image: url('https://i.imgur.com/fSkCbod.png');
 }
 
 #background-four{
-    background-color: yellow
+  background-image: url('https://i.imgur.com/jntSKsc.png');
 }
 
 #background-five{
-    background-color: blue
+  background-image: url('https://i.imgur.com/7bFP9wi.png');
 }

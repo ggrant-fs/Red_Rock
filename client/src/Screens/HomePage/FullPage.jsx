@@ -10,7 +10,7 @@ const Fullpage = () => (
         render={({ state, fullpageApi }) => {
             return (
                 <ReactFullpage.Wrapper>
-                    <div className="section">
+                    <div id='background-one' className="section">
                         <p>Section 1 (welcome to fullpage.js)</p>
                         <button onClick={() => fullpageApi.moveSectionDown()}>
                             Click me to move down

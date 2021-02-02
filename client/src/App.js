@@ -5,6 +5,8 @@ import CompanyForm from './Screens/CompanyForm/CompanyForm'
 import AboutPage from './Screens/AboutPage/AboutPage'
 import ContactPage from './Screens/ContactPage/ContactPage'
 import {loginUser} from './services/auth/auth'
+import {registerUser} from './services/auth/auth'
+import Register from './Componenet/Register/Register'
 import {useState} from 'react'
 
 
@@ -15,6 +17,11 @@ function App() {
     const userData = await loginUser(LoginData)
     setCurrentUser(userData)
   }
+
+  const handleRegister = async(registerData) =>{
+    const userData = await registerUser(registerData)
+    setCurrentUser(userData)
+  }
   return (
     <>
     
@@ -23,7 +30,10 @@ function App() {
           <FullPage/>   
         </Route>
         <Route path="/login">
-          <LoginPage handleLogin={handleLogin}/>
+          <LoginPage handleLogin={handleLogin} />
+        </Route>
+        <Route path='/register'>
+          <Register handleRegister={handleRegister}/>
         </Route>
         <Route path='/company'>
           <CompanyForm/>

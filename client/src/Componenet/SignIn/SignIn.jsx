@@ -8,7 +8,7 @@ const SignIn = (props) => {
         username: '',
         password: ''
     })
-    console.log(signInData)
+    // console.log(signInData)
     const handleChange = (event) => {
         const { name, value } = event.target
         setSignInData((prevState) => ({

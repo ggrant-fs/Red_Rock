@@ -4,6 +4,7 @@ import './AboutPage.css'
 const AboutPage = () => {
     return (
         <React.Fragment>
+
             <div id='about-page-img'></div>
             <div id='about-container-1'>
                 <div id='box-one'>box1</div>

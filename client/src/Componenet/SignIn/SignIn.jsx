@@ -1,11 +1,11 @@
-import { useState } from 'react'
 import React from 'react'
+import { loginUser } from '../../services/auth/auth'
+import { useState } from 'react'
 
 
-const SignIn = () => {
+const SignIn = (props) => {
     const [signInData, setSignInData] = useState({
-        userName: '',
-        email: '',
+        username: '',
         password: ''
     })
     console.log(signInData)
@@ -18,25 +18,20 @@ const SignIn = () => {
     }
 
     const handleSubmit = async (event) => {
-        event.preventDefualt()
+        event.preventDefault()
+        props.handleLogin(signInData)
     }
     return (
         <React.Fragment>
             <form onSubmit={handleSubmit}>
                 <input
                     type='text'
-                    name='userName'
-                    value={signInData.userName}
+                    name='username'
+                    value={signInData.username}
                     onChange={handleChange}
                     placeholder='Username...'
                 />
-                <input
-                    type='email'
-                    name='email'
-                    value={signInData.email}
-                    onChange={handleChange}
-                    placeholder='Email...'
-                />
+
                 <input
                     type='password'
                     name='password'

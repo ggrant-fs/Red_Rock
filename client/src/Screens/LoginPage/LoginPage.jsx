@@ -5,12 +5,12 @@ import '../../Componenet/SignIn/SignIn'
 import SignIn from '../../Componenet/SignIn/SignIn';
 
 
-const LoginPage = () => {
+const LoginPage = (props) => {
 
 
     return (
         <React.Fragment>
-            <SignIn />
+            <SignIn handleLogin={props.handleLogin} />
         </React.Fragment>
     );
 };

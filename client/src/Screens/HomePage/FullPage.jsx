@@ -16,25 +16,60 @@ const Fullpage = () => (
                     <div id='background-one' className="section">
                         <div id='nav-container'>
                             <nav>
-                                <Link to='/'><li>Home ||</li></Link>
-                                <Link to='/about'><li> About ||</li></Link>
-                                <Link to='/membership'><li> Membership ||</li></Link>
-                                <Link to='/login'><li> Login ||</li></Link>
-                                <Link to='/register'><li> Join us</li></Link>
+                                <Link to='/' className='nav-link'><li>Home|</li></Link>
+                                <Link to='/about' className='nav-link'><li>About|</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
                         </div>
-
                     </div>
                     <div id='background-two' className="section">
+                        <div id='nav-container2'>
+                            <nav>
+                                <Link to='/' className='nav-link'><li>Home|</li></Link>
+                                <Link to='/about' className='nav-link'><li>About|</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/register' className='nav-link'><li>Join us</li></Link>
+                            </nav>
+                        </div>
                         <p>Section 2</p>
                     </div>
                     <div id='background-three' className="section">
+                        <div id='nav-container3'>
+                            <nav>
+                                <Link to='/' className='nav-link'><li>Home|</li></Link>
+                                <Link to='/about' className='nav-link'><li>About|</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/register' className='nav-link'><li>Join us</li></Link>
+                            </nav>
+                        </div>
                         <p>Section 3</p>
                     </div>
                     <div id='background-four' className="section">
+                        <div id='nav-container4'>
+                            <nav>
+                                <Link to='/' className='nav-link'><li>Home|</li></Link>
+                                <Link to='/about' className='nav-link'><li>About|</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/register' className='nav-link'><li>Join us</li></Link>
+                            </nav>
+                        </div>
                         <p>Section 4</p>
                     </div>
                     <div id='background-five' className="section">
+                        <div id='nav-container5'>
+                            <nav>
+                                <Link to='/' className='nav-link'><li>Home|</li></Link>
+                                <Link to='/about' className='nav-link'><li>About|</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/register' className='nav-link'><li>Join us</li></Link>
+                            </nav>
+                        </div>
                         <p>Section </p>
                         <button onClick={() => fullpageApi.moveSectionDown()}></button>
                     </div>

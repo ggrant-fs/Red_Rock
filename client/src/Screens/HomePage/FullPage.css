@@ -1,31 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 .section{
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 li{
     display:inline;
+    font-family:'Parisienne', cursive;;
+    font-size: 20px;
+    
+}
+.nav-link{
+  text-decoration: none;
+  color: white;
 }
 #background-one{
   background-image: url('https://i.imgur.com/XJRIJQt.png');
+  display: flex;
 }
 #background-two{
   background-image: url('https://i.imgur.com/fojjSwu.png?1');
+  display: flex;
 }
 
 #background-three{
    background-image: url('https://i.imgur.com/fSkCbod.png');
+   display: flex;
 }
 
 #background-four{
   background-image: url('https://i.imgur.com/jntSKsc.png');
+  display: flex;
 }
 
 #background-five{
   background-image: url('https://i.imgur.com/7bFP9wi.png');
+  display: flex;
 }
 
-#nav-Container{
-    
+nav{
+  background-color: brown;
+  display: flex;
+  justify-content: flex-end;
+ 
 }

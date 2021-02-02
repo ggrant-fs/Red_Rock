@@ -1,6 +1,9 @@
+import './FullPage.css'
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import './FullPage.css'
+import { Link } from 'react-router-dom'
+
+
 const Fullpage = () => (
     <ReactFullpage
         //fullpage options
@@ -11,10 +14,16 @@ const Fullpage = () => (
             return (
                 <ReactFullpage.Wrapper>
                     <div id='background-one' className="section">
-                        <p>Section 1 (welcome to fullpage.js)</p>
-                        <button onClick={() => fullpageApi.moveSectionDown()}>
-                            Click me to move down
-              </button>
+                        <div id='nav-container'>
+                            <nav>
+                                <Link to='/'><li>Home ||</li></Link>
+                                <Link to='/about'><li> About ||</li></Link>
+                                <Link to='/membership'><li> Membership ||</li></Link>
+                                <Link to='/login'><li> Login ||</li></Link>
+                                <Link to='/register'><li> Join us</li></Link>
+                            </nav>
+                        </div>
+
                     </div>
                     <div id='background-two' className="section">
                         <p>Section 2</p>
@@ -27,6 +36,7 @@ const Fullpage = () => (
                     </div>
                     <div id='background-five' className="section">
                         <p>Section </p>
+                        <button onClick={() => fullpageApi.moveSectionDown()}></button>
                     </div>
                 </ReactFullpage.Wrapper>
             );

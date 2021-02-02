@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import FullPage from './Screens/HomePage/FullPage'
 // import LoginPage from './Screens/LoginPage/LoginPage'
 import {Route, Switch} from 'react-router'
@@ -16,6 +14,7 @@ function App() {
   // }
   return (
     <>
+    
       <Switch>
         <Route exact path='/'>
           <FullPage/>   

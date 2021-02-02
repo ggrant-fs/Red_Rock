@@ -6,6 +6,8 @@ const mainContainer = (props) => {
     const [benefits, setBenefits] = useState([])
     //we're going to create the state that will handle benefits
     //we'll be using a useEffect to grab the state of benefits
+
+    //api request to get all the data for benefits
     useEffect(() => {
         fetchBenefits = async () => {
             const benefitsData = await getAllBenefits()
@@ -14,13 +16,14 @@ const mainContainer = (props) => {
         fetchBenefits()
     }, [])
 
-
+    //api request to create a new benefit
     const handleCreate = async (benefitsData) => {
         const newBenefit = await postBenefit(benefitsData)
         setBenefits([...prevState, newBenefit])
         history.pushState('/benefits')
     }
 
+    //api request to find a specific benefit by it's id then update the selected benefit
     const handleUpdate = async (id, benefitsData) => {
         const updateBenefit = await putBenefit(id, benefitsData)
         setBenefits(prevState => prevState.map((currentBenefit => {
@@ -29,6 +32,7 @@ const mainContainer = (props) => {
         history.pushState('/benefits')
     }
 
+    //api request to find a specific benefit by its id then delete it
     const handleDelete = async (id) => {
         await deleteBenefit(id)
         setBenefits((prevState) => prevState.filter((currentBenefit) => {
@@ -38,6 +42,7 @@ const mainContainer = (props) => {
 
     return (
         <React.Fragment>
+            {/* below the api request are being passed as a prop to provide functionality  */}
             <Switch>
                 <Route>
 

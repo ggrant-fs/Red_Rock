@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
 import { useState } from 'react'
+import React from 'react'
+
 
 const SignIn = () => {
     const [signInData, setSignInData] = useState({
@@ -7,7 +8,7 @@ const SignIn = () => {
         email: '',
         password: ''
     })
-
+    console.log(signInData)
     const handleChange = (event) => {
         const { name, value } = event.target
         setSignInData((prevState) => ({
@@ -43,7 +44,7 @@ const SignIn = () => {
                     onChange={handleChange}
                     placeholder='Password...'
                 />
-                <button type='submit'></button>
+                <button type='submit'>Submit</button>
             </form>
         </React.Fragment>
     );

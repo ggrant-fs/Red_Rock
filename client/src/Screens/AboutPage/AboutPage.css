@@ -1,7 +1,9 @@
 body{
     margin:0;
 }
-
+.main-about-page{
+  
+}
 #about-page-img{
     background-image: url('https://i.imgur.com/P8OwXAQ.png');
     background-repeat: no-repeat;
@@ -10,28 +12,3 @@ body{
     height: 500px;
 }
 
-#about-container-1{
-    display: flex;
-}
-
-#about-container-2{
-    display: flex;
-}
-
-#about-container-3{
-    display: flex;
-}
-
-#box-one, #box-four,#box-five{
-    background-color: yellow;
-    height: 300px;
-    width: 300px;
-}
-
-#box-four{
-    background-color: aqua;
-}
-
-#box-five{
-    background-color: red;
-}

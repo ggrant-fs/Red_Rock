@@ -16,33 +16,40 @@ const Fullpage = () => (
                     <div id='background-one' className="section">
                         <div id='nav-container'>
                             <nav>
-                                <Link to='/' className='nav-link'><li>Home|</li></Link>
-                                <Link to='/about' className='nav-link'><li>About|</li></Link>
-                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
-                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/' className='nav-link'><li>Home</li></Link>
+                                <Link to='/about' className='nav-link'><li>About</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
+                        </div>
+                        <div>
+                            <h1 id='title'>Enter</h1>
+                            <h1>s</h1>
                         </div>
                     </div>
                     <div id='background-two' className="section">
                         <div id='nav-container2'>
                             <nav>
-                                <Link to='/' className='nav-link'><li>Home|</li></Link>
-                                <Link to='/about' className='nav-link'><li>About|</li></Link>
-                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
-                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/' className='nav-link'><li>Home</li></Link>
+                                <Link to='/about' className='nav-link'><li>About</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
                         </div>
-                        <p>Section 2</p>
+                        <div id='split'>
+                            <h1 id='section-two-title'>Luxury Concierge</h1>
+                        </div>
+
                     </div>
                     <div id='background-three' className="section">
                         <div id='nav-container3'>
                             <nav>
-                                <Link to='/' className='nav-link'><li>Home|</li></Link>
-                                <Link to='/about' className='nav-link'><li>About|</li></Link>
-                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
-                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/' className='nav-link'><li>Home</li></Link>
+                                <Link to='/about' className='nav-link'><li>About</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
                         </div>
@@ -51,10 +58,10 @@ const Fullpage = () => (
                     <div id='background-four' className="section">
                         <div id='nav-container4'>
                             <nav>
-                                <Link to='/' className='nav-link'><li>Home|</li></Link>
-                                <Link to='/about' className='nav-link'><li>About|</li></Link>
-                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
-                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/' className='nav-link'><li>Home</li></Link>
+                                <Link to='/about' className='nav-link'><li>About</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
                         </div>
@@ -63,10 +70,10 @@ const Fullpage = () => (
                     <div id='background-five' className="section">
                         <div id='nav-container5'>
                             <nav>
-                                <Link to='/' className='nav-link'><li>Home|</li></Link>
-                                <Link to='/about' className='nav-link'><li>About|</li></Link>
-                                <Link to='/membership' className='nav-link'><li>Membership|</li></Link>
-                                <Link to='/login' className='nav-link'><li>Login|</li></Link>
+                                <Link to='/' className='nav-link'><li>Home</li></Link>
+                                <Link to='/about' className='nav-link'><li>About</li></Link>
+                                <Link to='/membership' className='nav-link'><li>Membership</li></Link>
+                                <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
                         </div>

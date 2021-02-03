@@ -1,5 +1,4 @@
 import React from 'react'
-import { loginUser } from '../../services/auth/auth'
 import { useState } from 'react'
 
 
@@ -8,7 +7,7 @@ const SignIn = (props) => {
         username: '',
         password: ''
     })
-    // console.log(signInData)
+
     const handleChange = (event) => {
         const { name, value } = event.target
         setSignInData((prevState) => ({
@@ -20,6 +19,7 @@ const SignIn = (props) => {
     const handleSubmit = async (event) => {
         event.preventDefault()
         props.handleLogin(signInData)
+
     }
     return (
         <React.Fragment>

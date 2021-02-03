@@ -4,7 +4,7 @@ import {Route, Switch} from 'react-router'
 import CompanyForm from './Screens/CompanyForm/CompanyForm'
 import AboutPage from './Screens/AboutPage/AboutPage'
 import ContactPage from './Screens/ContactPage/ContactPage'
-import {loginUser} from './services/auth/auth'
+import {loginUser, removeToken} from './services/auth/auth'
 import {registerUser} from './services/auth/auth'
 import Register from './Componenet/Register/Register'
 import {useState} from 'react'
@@ -21,6 +21,12 @@ function App() {
   const handleRegister = async(registerData) =>{
     const userData = await registerUser(registerData)
     setCurrentUser(userData)
+  }
+
+  const handleLogout = () =>{
+    setCurrentUser(null)
+    localStorage.removeItem('authToken')
+    removeToken()
   }
   return (
     <>

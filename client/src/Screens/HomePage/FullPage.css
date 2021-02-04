@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Syncopate&display=swap');
+
 .section{
     width: 100%;
     background-repeat: no-repeat;
@@ -16,34 +18,76 @@ li{
   text-decoration: none;
   color: white;
 }
+
 #background-one{
   background-image: url('https://i.imgur.com/XJRIJQt.png');
   display: flex;
+}
+
+#sec-one-intro{
+  display: flex;
+  justify-content: center;
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 80px;
+  font-weight:bold;
+  color: white;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+#container-logos{
+ display:flex;
+ margin:480px;
+ justify-content:space-evenly;
+ 
 }
 #background-two{
   background-image: url('https://i.imgur.com/fojjSwu.png?1');
   display: flex;
 }
 #split{
-  background-color: white;
+  background-color:white;
   height: 1200px;
   width:40%;
+}
+h1{
+  margin: 0;
+  font-size: 60px;
+  text-align: center;
+  /* text-decoration: underline; */
+}
+
+#sec-one-span{
+  text-decoration: none;
+  color: rgba(255, 255, 255,0.0)
 }
 #background-three{
    background-image: url('https://i.imgur.com/fSkCbod.png');
    display: flex;
 }
-
+#sec-3-h1{
+  color: white;
+}
 #background-four{
   background-image: url('https://i.imgur.com/jntSKsc.png');
   display: flex;
+}
+
+#split-2{
+  background-color: white;
+  height: 1200px;
+  width: 5px;
 }
 
 #background-five{
   background-image: url('https://i.imgur.com/7bFP9wi.png');
   display: flex;
 }
-
+#split-2{
+  background-color:rgb(255, 255, 255);
+  height: 1200px;
+  width:40%;
+}
 nav{
   background-color: brown;
   display: flex;
@@ -64,3 +108,14 @@ nav{
     /* background-color: rgba(202, 158, 14, 0.5); */
 }
 
+#sec-two-content{
+  font-size: 25px;
+}
+
+#sec-two-content-2{
+  font-size: 25px;
+}
+
+.sec-five-content{
+  font-size: 25px;
+}

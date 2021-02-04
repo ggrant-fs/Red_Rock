@@ -1,4 +1,4 @@
-import api from '.api-config'
+import api from '../../services/api-config/api-config'
 
 export const getAllBenefits = async() =>{
     const resp = await api.get('/benefits')

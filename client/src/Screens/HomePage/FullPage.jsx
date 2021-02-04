@@ -81,9 +81,9 @@ const Fullpage = () => (
                                 <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
-                        </div>
-                        <div>
-                            {/* <h1 id='sec-3-h1'>The Most Lavishing<br /> Experience</h1> */}
+                            <div id='logo-sec3'>
+                                <img alt='' src='https://i.imgur.com/PjdhYGl.png?1' />
+                            </div>
                         </div>
                     </div>
                     <div id='background-four' className="section">
@@ -95,7 +95,12 @@ const Fullpage = () => (
                                 <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
+                            <div id='logo-sec4'>
+                                <img alt='' src='https://i.imgur.com/PjdhYGl.png?1' />
+                            </div>
+                            <div id='member-box'>
 
+                            </div>
                         </div>
                     </div>
                     <div id='background-five' className="section">

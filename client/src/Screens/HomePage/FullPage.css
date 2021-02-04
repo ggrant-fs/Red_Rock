@@ -61,6 +61,9 @@ h1{
   text-decoration: none;
   color: rgba(255, 255, 255,0.0)
 }
+#logo-sec3{
+  margin-top: -70px;
+}
 #background-three{
    background-image: url('https://i.imgur.com/fSkCbod.png');
    display: flex;
@@ -71,6 +74,10 @@ h1{
 #background-four{
   background-image: url('https://i.imgur.com/jntSKsc.png');
   display: flex;
+}
+
+#logo-sec4{
+  margin-top: -70px;
 }
 
 #split-2{
@@ -115,7 +122,21 @@ nav{
 #sec-two-content-2{
   font-size: 25px;
 }
-
+#member-box{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-size:40px;
+}
+#member-button{
+  width: 250px;
+  height: 250px;
+  font-size: 20px;
+}
+.event-title{
+  color: aqua;
+  margin-top: 0;
+}
 .sec-five-content{
   font-size: 25px;
 }

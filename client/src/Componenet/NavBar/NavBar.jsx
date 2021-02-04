@@ -8,11 +8,11 @@ const NavBar = () => {
             <header>
                 <nav>
                     <ul>
-                        <Link to='/'><li>Home</li></Link>
-                        <Link to='/about'><li>About</li></Link>
-                        <Link to='/contact'><li>Contact</li></Link>
-                        <Link to='/login'><li>Login</li></Link>
-                        <Link to='/register'><li>Join Us</li></Link>
+                        <Link to='/' className='nav-link'><li>Home</li></Link>
+                        <Link to='/about' className='nav-link' ><li>About</li></Link>
+                        <Link to='/contact' className='nav-link'><li>Contact</li></Link>
+                        <Link to='/login' className='nav-link'><li>Login</li></Link>
+                        <Link to='/register' className='nav-link'><li>Join Us</li></Link>
                     </ul>
                 </nav>
             </header>

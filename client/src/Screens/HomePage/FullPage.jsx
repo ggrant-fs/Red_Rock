@@ -14,7 +14,7 @@ const Fullpage = () => (
             return (
                 <ReactFullpage.Wrapper>
                     <div id='background-one' className="section">
-                        <div id='nav-container'>
+                        {/* <div id='nav-container'>
                             <nav>
                                 <Link to='/' className='nav-link'><li>Home</li></Link>
                                 <Link to='/about' className='nav-link'><li>About</li></Link>
@@ -22,7 +22,7 @@ const Fullpage = () => (
                                 <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
-                        </div>
+                        </div> */}
 
                         <div>
                             <h1 id='sec-one-intro'>Life Lavish <span id='sec-one-span'>and</span> Luxury Elite</h1>
@@ -42,7 +42,7 @@ const Fullpage = () => (
 
                     </div>
                     <div id='background-two' className="section">
-                        <div id='nav-container2'>
+                        {/* <div id='nav-container2'>
                             <nav>
                                 <Link to='/' className='nav-link'><li>Home</li></Link>
                                 <Link to='/about' className='nav-link'><li>About</li></Link>
@@ -50,7 +50,7 @@ const Fullpage = () => (
                                 <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
                             </nav>
-                        </div>
+                        </div> */}
                         <div id='split'>
                             <h1 id='section-two-title'>Luxury Concierge</h1>
                             <p id='sec-two-content'>
@@ -73,7 +73,7 @@ const Fullpage = () => (
 
                     </div>
                     <div id='background-three' className="section">
-                        <div id='nav-container3'>
+                        {/* <div id='nav-container3'>
                             <nav>
                                 <Link to='/' className='nav-link'><li>Home</li></Link>
                                 <Link to='/about' className='nav-link'><li>About</li></Link>
@@ -84,10 +84,10 @@ const Fullpage = () => (
                             <div id='logo-sec3'>
                                 <img alt='' src='https://i.imgur.com/PjdhYGl.png?1' />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div id='background-four' className="section">
-                        <div id='nav-container4'>
+                        {/* <div id='nav-container4'>
                             <nav>
                                 <Link to='/' className='nav-link'><li>Home</li></Link>
                                 <Link to='/about' className='nav-link'><li>About</li></Link>
@@ -101,17 +101,17 @@ const Fullpage = () => (
                             <div id='member-box'>
 
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div id='background-five' className="section">
                         <div id='nav-container5'>
-                            <nav>
+                            {/* <nav>
                                 <Link to='/' className='nav-link'><li>Home</li></Link>
                                 <Link to='/about' className='nav-link'><li>About</li></Link>
                                 <Link to='/membership' className='nav-link'><li>Membership</li></Link>
                                 <Link to='/login' className='nav-link'><li>Login</li></Link>
                                 <Link to='/register' className='nav-link'><li>Join us</li></Link>
-                            </nav>
+                            </nav> */}
                             <div id='split-2'>
                                 <h1 id='section-five-title'>The Lifestyle</h1>
                                 <p className='sec-five-content'>

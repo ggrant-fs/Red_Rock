@@ -1,4 +1,5 @@
 import FullPage from './Screens/HomePage/FullPage'
+import Layout from './Componenet/Layout/Layout'
 import LoginPage from './Screens/LoginPage/LoginPage'
 import {Route, Switch} from 'react-router'
 import CompanyForm from './Screens/CompanyForm/CompanyForm'
@@ -30,7 +31,7 @@ function App() {
   }
   return (
     <>
-    
+    <Layout>
       <Switch>
         <Route exact path='/'>
           <FullPage/>   
@@ -51,6 +52,7 @@ function App() {
           <ContactPage />
         </Route>
       </Switch>
+    </Layout>
     </>
   )
 }

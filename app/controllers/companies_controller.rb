@@ -1,4 +1,4 @@
-class CompanyController < ApplicationController
+class CompaniesController < ApplicationController
   before_action :set_user, only: [:show, :update, :delete]
   before_action :authorize_request, except: :create
   def index
@@ -42,7 +42,7 @@ def set_company
 end
 
   def company_params
-    @company = Company.find(params[:id])
+  params.require(:company).permit(:username, :email, :password, :phone_number, :industry, :suffix, :duns)
   end
   
 end

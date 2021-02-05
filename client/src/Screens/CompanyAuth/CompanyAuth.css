@@ -1,0 +1,29 @@
+
+.mainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#form-img{
+    background-image: url('https://i.imgur.com/fuUG6oa.png');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#form-right-side{
+    background-color:rgba(0, 0, 0, 0.897);
+    width:800px;
+    height: 100vh;
+}
+
+#login-input{
+    display: flex;
+    justify-content: center;
+}
+
+#register-input{
+    display: flex;
+    justify-content: center;
+}

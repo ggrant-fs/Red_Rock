@@ -5,14 +5,16 @@ import {Route, Switch} from 'react-router'
 import CompanyForm from './Screens/CompanyForm/CompanyForm'
 import AboutPage from './Screens/AboutPage/AboutPage'
 import ContactPage from './Screens/ContactPage/ContactPage'
-import {loginUser, removeToken} from './services/auth/auth'
-import {registerUser} from './services/auth/auth'
-import Register from './Componenet/Register/Register'
+import {registerUser , registerCompany, removeToken, loginUser, loginCompany} from './services/auth/auth'
+import Register from './Screens/CompanyAuth/subComponent/Register/Register'
 import {useState} from 'react'
+import CompanyAuth from './Screens/CompanyAuth/CompanyAuth'
+
 
 
 function App() {
   const [currentUser,setCurrentUser ] = useState(null)
+  const [currentCompany, setCurrentCompany]= useState(null)
 
   const handleLogin = async(LoginData)=>{
     const userData = await loginUser(LoginData)
@@ -24,6 +26,15 @@ function App() {
     setCurrentUser(userData)
   }
 
+  const handleRegisterCompany = async(registerData)=>{
+    const companyData = await registerCompany(registerData)
+    setCurrentCompany(companyData)
+  }
+
+  const handleCompanyLogin = async(loginData) =>{
+    const companyData = await loginCompany(loginData)
+    setCurrentCompany(companyData)
+  }
   const handleLogout = () =>{
     setCurrentUser(null)
     localStorage.removeItem('authToken')
@@ -40,7 +51,9 @@ function App() {
           <LoginPage handleLogin={handleLogin} />
         </Route>
         <Route path='/register'>
-          <Register handleRegister={handleRegister}/>
+          <CompanyAuth 
+          handleRegister={handleRegisterCompany}
+           handleCompanyLogin={handleCompanyLogin}/>
         </Route>
         <Route path='/company'>
           <CompanyForm/>
@@ -48,7 +61,7 @@ function App() {
         <Route path='/about'>
           <AboutPage />
         </Route>
-        <Route path='/ccntact'>
+        <Route path='/contact'>
           <ContactPage />
         </Route>
       </Switch>

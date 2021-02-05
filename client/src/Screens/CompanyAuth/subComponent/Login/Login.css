@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+#account-login,#account-password{
+   width: 300px;
+   height: 30px;
+   margin-bottom:20px;
+   border-radius: 15px;
+   font-family: 'Cinzel Decorative', cursive;
+}
+#account-password{
+    /* margin-bottom: 20px; */
+}
+
+h3{
+    text-decoration: underline;
+    text-decoration-color: floralwhite;
+}

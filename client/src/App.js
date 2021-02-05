@@ -1,7 +1,7 @@
 import FullPage from './Screens/HomePage/FullPage'
 import Layout from './Componenet/Layout/Layout'
 import LoginPage from './Screens/LoginPage/LoginPage'
-import {Route, Switch} from 'react-router'
+import {Route, Switch,useHistory} from 'react-router'
 import CompanyForm from './Screens/CompanyForm/CompanyForm'
 import AboutPage from './Screens/AboutPage/AboutPage'
 import ContactPage from './Screens/ContactPage/ContactPage'
@@ -15,6 +15,7 @@ import CompanyAuth from './Screens/CompanyAuth/CompanyAuth'
 function App() {
   const [currentUser,setCurrentUser ] = useState(null)
   const [currentCompany, setCurrentCompany]= useState(null)
+  const histroy = useHistory()
 
   const handleLogin = async(LoginData)=>{
     const userData = await loginUser(LoginData)
@@ -29,11 +30,13 @@ function App() {
   const handleRegisterCompany = async(registerData)=>{
     const companyData = await registerCompany(registerData)
     setCurrentCompany(companyData)
+    history.push('/company/benefits')
   }
 
   const handleCompanyLogin = async(loginData) =>{
     const companyData = await loginCompany(loginData)
     setCurrentCompany(companyData)
+    history.push('/companybenefits')
   }
   const handleLogout = () =>{
     setCurrentUser(null)

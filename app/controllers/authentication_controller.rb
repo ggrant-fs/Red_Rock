@@ -23,7 +23,7 @@ class AuthenticationController < ApplicationController
    def company_login
     @company = Company.find_by(username: login_params[:username])
       if @company.authenticate(login_params[:password])
-        token = encode({id: @user.id})
+        token = encode({id: @company.id})
         render json: {
             company: @company.attributes.except("password_digest"),
             token: token,

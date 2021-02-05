@@ -5,7 +5,12 @@ import Login from './subComponent/Login/Login'
 const CompanyAuth = (props) => {
     return (
         <div className='mainDiv'>
-            <div id='form-img'></div>
+            <div id='form-img'>
+                <div id='quote'>
+                    <h1>Life and luxury begin with</h1><br />
+                    <h1>Red Rock</h1>
+                </div>
+            </div>
             <div id='form-right-side'>
                 <div id='login-input'>
                     <Login {...props} />

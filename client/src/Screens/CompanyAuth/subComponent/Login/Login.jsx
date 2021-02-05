@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 import './Login.css'
-const Login = () => {
+const Login = (props) => {
     const [login, setLogin] = useState({
         username: "",
         password: ""
@@ -17,7 +17,7 @@ const Login = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-
+        props.handleCompanyLogin(login)
     }
 
     return (
@@ -30,6 +30,7 @@ const Login = () => {
                     name='username'
                     value={login.username}
                     onChange={handleChange}
+                    placeholder='Username'
                 /><br />
                 <input
                     id='account-password'
@@ -37,6 +38,7 @@ const Login = () => {
                     name='password'
                     value={login.password}
                     onChange={handleChange}
+                    placeholder='Password'
                 /><br />
                 <button>Submit</button>
             </form>

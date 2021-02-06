@@ -9,7 +9,7 @@ const Benefits = (props) => {
 
             <div id='main-image'></div>
             <div id='container-one'>
-                <div className='break'></div>
+                {/* <div className='break'></div> */}
                 <div className='container-one-images'></div>
                 <div className='break'></div>
                 <div className='container-one-images'></div>
@@ -19,9 +19,9 @@ const Benefits = (props) => {
                 <div className='container-one-images'></div>
                 <div className='break'></div>
             </div>
-            {/* <hr /> */}
+            <hr />
             <div id='container-two'>
-                <div id='break-container2'></div>
+                {/* <div id='break-container2'></div> */}
                 <div className='container-two-images'></div>
                 <div id='break-container2'></div>
                 <div className='container-two-images'></div>

@@ -26,6 +26,10 @@ const CompanyContainer = (props) => {
         history.push('/company/benefits')
     }
 
+    const handleDelete = async (id) => {
+        const deleteBenefit = await deleteBenefit(id)
+        setBenefits(prevState => prevState.filter(beneft => beneft.id !== id))
+    }
     return (
         <Switch >
             <Route path='/company/benefits/new'>

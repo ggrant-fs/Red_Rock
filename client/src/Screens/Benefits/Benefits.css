@@ -5,21 +5,34 @@ h3{
 #main-image{
     height:500px;
     width:100%;
-    background-color: green;
+    background-image: url('https://i.imgur.com/jAPuQJG.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #container-one{
     display: flex;
     margin-top: 30px;
     margin-bottom:30px;
+    /* justify-content: space-around; */
 }
 
 .container-one-images{
     height:250px;
-    width: 350px;
+    width: 450px;
     background-color: salmon;
 }
+#container-img1{
+   background-image: url('https://i.imgur.com/ThpPq9V.png');
+}
 
+#container-img2{
+    background-image: url('https://i.imgur.com/VF4jKXl.png');
+}
+
+#container-img3{
+    background-image: url('https://i.imgur.com/6NaR3uN.png');
+}
 .break{
     height:100px;
     width: 10px;

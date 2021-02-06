@@ -1,8 +1,9 @@
 class BenefitsController < ApplicationController
     before_action :set_benefit, only: [:show, :update, :delete]
+    before_action :authorize_request_company, only: [:index,:create]
 
   def index
-    @benefit = Benefit.all
+    @benefit = @current_company.benefits
     render json: @benefit
   end
 
@@ -11,7 +12,9 @@ class BenefitsController < ApplicationController
   end
 
   def create
-   @benefit = Benefit.new(company_params)
+   @benefit = Benefit.new(benefit_params)
+   @benefit.company = @current_company
+
     if@benefit.save
       
      render json: @benefit, status: :created
@@ -39,7 +42,7 @@ def set_benefit
 end
 
   def benefit_params
-   @benefit = Benefit.find(params[:id])
+  params.require(:benefit).permit(:membership, :name, :price, :location, :date, :description, :expiration, :length)
   end
 
 end

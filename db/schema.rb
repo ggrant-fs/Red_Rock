@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_31_055026) do
+ActiveRecord::Schema.define(version: 2021_02_05_220810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 2021_01_31_055026) do
     t.string "description"
     t.string "expiration"
     t.string "length"
+    t.bigint "company_id", null: false
+    t.index ["company_id"], name: "index_benefits_on_company_id"
   end
 
   create_table "companies", force: :cascade do |t|
@@ -51,4 +53,5 @@ ActiveRecord::Schema.define(version: 2021_01_31_055026) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "benefits", "companies"
 end

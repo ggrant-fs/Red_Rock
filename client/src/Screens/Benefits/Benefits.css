@@ -1,0 +1,44 @@
+h3{
+    color:black
+}
+
+#main-image{
+    height:500px;
+    width:100%;
+    background-color: green;
+}
+
+#container-one{
+    display: flex;
+    margin-top: 30px;
+    /* margin-bottom:30px; */
+}
+
+.container-one-images{
+    height:250px;
+    width: 350px;
+    background-color: salmon;
+}
+
+.break{
+    height:300px;
+    width: 10px;
+    background-color: white;
+}
+
+#container-two{
+    display:flex;
+    
+}
+
+.container-two-images{
+    height: 300px;
+    width:50%;
+    background-color: slateblue;
+}
+
+#break-container2{
+    height: 200px;
+    width: 10px;
+    background-color: white;
+}

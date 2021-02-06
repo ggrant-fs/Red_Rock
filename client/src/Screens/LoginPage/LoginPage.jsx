@@ -10,7 +10,8 @@ const LoginPage = (props) => {
 
     return (
         <React.Fragment>
-            <SignIn handleLogin={props.handleLogin} />
+            <div id='background-img'></div>
+            {/* <SignIn handleLogin={props.handleLogin} /> */}
         </React.Fragment>
     );
 };

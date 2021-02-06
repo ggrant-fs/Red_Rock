@@ -5,7 +5,7 @@ import './Layout.css'
 const Layout = (props) => {
     return (
         <React.Fragment>
-            <NavBar />
+            <NavBar {...props} />
             <div className='mainContainer'>
                 {props.children}
             </div>

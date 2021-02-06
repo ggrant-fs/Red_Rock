@@ -1,6 +1,6 @@
 class AuthenticationController < ApplicationController
    before_action :authorize_request, only: :verify  
-   before_action :authorize_request, only: :company_verify
+   before_action :authorize_request_company, only: :company_verify
    #post /auth/login
    def login
     @user = User.find_by(username: login_params[:username])

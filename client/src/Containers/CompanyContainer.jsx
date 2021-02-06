@@ -5,6 +5,7 @@ import Benefits from '../Screens/Benefits/Benefits.jsx'
 import { getAllBenefits } from '../services/benefits/benefits'
 import BenefitCreate from '../Screens/BenefitCreate/BenefitCreate'
 import { postBenefit } from '../services/benefits/benefits'
+import { deleteBenefit } from '../services/benefits/benefits'
 
 
 const CompanyContainer = (props) => {
@@ -27,7 +28,7 @@ const CompanyContainer = (props) => {
     }
 
     const handleDelete = async (id) => {
-        const deleteBenefit = await deleteBenefit(id)
+        await deleteBenefit(id)
         setBenefits(prevState => prevState.filter(beneft => beneft.id !== id))
     }
     return (
@@ -36,7 +37,7 @@ const CompanyContainer = (props) => {
                 <BenefitCreate handleCreate={handleCreate} />
             </Route>
             <Route path='/company/benefits' >
-                <Benefits benefits={benefits} />
+                <Benefits benefits={benefits} handleDelete={handleDelete} />
             </Route>
 
         </Switch>

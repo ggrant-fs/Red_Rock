@@ -10,7 +10,7 @@ export const postBenefit= async(benefitData) =>{
     return resp.data
 }
 export const deleteBenefit= async(id) =>{
-    const resp = await api.delete(`/benefit/${id}`)
+    const resp = await api.delete(`/benefits/${id}`)
     return resp
 }
 export const putBenefit= async(id, benefitData) =>{

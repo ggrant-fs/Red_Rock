@@ -33,15 +33,18 @@ const Benefits = (props) => {
             {props.benefits.map(benefit => (
                 <div key={benefit.id}>
                     {benefit.name}
+                    <button onClick={(e) => props.handleDelete(benefit.id)} >Delete</button>
+                    <Link to={`/company/benefits/${id}/edit`}><button>Edit</button></Link>
                 </div>
 
-            ))}
+            ))
+            }
 
             <Link to='/company/benefits/new'><button>create</button></Link>
 
 
 
-        </div>
+        </div >
     );
 };
 

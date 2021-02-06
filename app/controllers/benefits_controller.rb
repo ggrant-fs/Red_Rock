@@ -1,5 +1,5 @@
 class BenefitsController < ApplicationController
-    before_action :set_benefit, only: [:show, :update, :delete]
+    before_action :set_benefit, only: [:show, :update, :destroy]
     before_action :authorize_request_company, only: [:index,:create]
 
   def index
@@ -31,7 +31,7 @@ class BenefitsController < ApplicationController
     end
   end
 
-  def delete
+  def destroy
    @benefit.destroy
   end
 

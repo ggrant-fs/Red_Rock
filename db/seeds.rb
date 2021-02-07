@@ -20,10 +20,11 @@ end
 20.times do
    company_data = Company.create!(
         username: Faker::Company.name,
-        email: Faker::Name.first_name + "gmail.com",
+        email: Faker::Name.first_name + "@gmail.com",
         phone_number: Faker::Number.number(digits: 10),
         industry: Faker::Company.industry,
         suffix: Faker::Company.suffix,
-        duns: Faker::Company.duns_number
+        duns: Faker::Company.duns_number,
+        password: Faker::String.random(length: 10..15) 
     )
 end

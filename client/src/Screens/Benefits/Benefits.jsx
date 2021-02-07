@@ -34,7 +34,7 @@ const Benefits = (props) => {
                 <div key={benefit.id}>
                     {benefit.name}
                     <button onClick={(e) => props.handleDelete(benefit.id)} >Delete</button>
-                    <Link to={`/company/benefits/${id}/edit`}><button>Edit</button></Link>
+                    <Link to={`/company/benefits/${benefit.id}/edit`}><button>Edit</button></Link>
                 </div>
 
             ))

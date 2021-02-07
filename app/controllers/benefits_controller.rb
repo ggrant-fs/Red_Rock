@@ -42,7 +42,7 @@ def set_benefit
 end
 
   def benefit_params
-  params.require(:benefit).permit(:membership, :name, :price, :location, :date, :description, :expiration, :length)
+  params.require(:benefit).permit(:membership, :name, :price, :location, :date, :description, :expiration, :length,:discount)
   end
 
 end

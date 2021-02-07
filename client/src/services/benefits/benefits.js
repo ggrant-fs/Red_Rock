@@ -14,7 +14,7 @@ export const deleteBenefit= async(id) =>{
     return resp
 }
 export const putBenefit= async(id, benefitData) =>{
-   const resp = await api.put(`/benefit/${id}`,{benefit: benefitData})
+   const resp = await api.put(`/benefits/${id}`,{benefit: benefitData})
    return resp.data
 }
 export const getOneBenefit = async(id) =>{

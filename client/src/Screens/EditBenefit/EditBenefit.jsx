@@ -1,6 +1,8 @@
 import React from 'react';
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
-const EditBenefit = () => {
+const EditBenefit = (props) => {
     const [formData, setFormData] = useState({
         membership: '',
         name: '',
@@ -12,6 +14,20 @@ const EditBenefit = () => {
         expiration: '',
         length: ''
     })
+    const { id } = useParams()
+
+    useEffect(() => {
+        const prefillFormData = () => {
+            const benefitItem = props.benefits.find((benefit) => {
+                return benefit.id === Number(id)
+            })
+            setFormData(benefitItem)
+        }
+        if (props.benefits.length) {
+            prefillFormData()
+        }
+
+    }, [props.benefit])
 
     const handleChange = (event) => {
         const { name, value } = event.target
@@ -21,15 +37,12 @@ const EditBenefit = () => {
         }))
     }
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        props.handleRegister(formData)
-    }
+
     return (
         <div>
             <form onSubmit={(e) => {
                 e.preventDefault()
-                props.handleCreate(formData)
+                props.handleEdit(id, formData)
             }}>
                 <input
                     type='text'

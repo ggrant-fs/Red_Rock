@@ -12,7 +12,7 @@ const NavBar = (props) => {
                         <Link to='/about' className='nav-link' ><li>About</li></Link>
                         <Link to='/contact' className='nav-link'><li>Contact</li></Link>
                         {props.currentCompany ?
-                            <Link to='/company/benefits'>Benefits</Link>
+                            <Link to='/company/benefits' className='nav-link'>Benefits</Link>
                             :
                             <>
                                 <Link to='/login' className='nav-link'><li>User Login</li></Link>

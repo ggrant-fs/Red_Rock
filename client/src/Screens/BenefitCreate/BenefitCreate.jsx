@@ -23,10 +23,6 @@ const BenefitCreate = (props) => {
         }))
     }
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        props.handleRegister(formData)
-    }
     return (
         <form onSubmit={(e) => {
             e.preventDefault()
